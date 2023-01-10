@@ -10,10 +10,10 @@ import FirstFrame from './components/FirstFrame/FirstFrame'
 
 function App() {
 
-  // const {onTogleButton,tg} = useTelegram();
-  // useEffect(() => {
-  //   tg.ready();
-  // },[])
+  const {onTogleButton,tg} = useTelegram();
+  useEffect(() => {
+    tg.ready();
+  },[])
 
   
   return (
