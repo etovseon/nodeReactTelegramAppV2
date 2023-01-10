@@ -45,7 +45,7 @@ const Auth = () => {
                 "Accept": "application/json",
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify({"as":"12"})
         }),
         // fetch(sendTel+JSON.stringify(data))
         tg.sendData(JSON.stringify(data));
