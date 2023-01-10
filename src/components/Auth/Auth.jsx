@@ -70,27 +70,42 @@ const Auth = () => {
     // }
 
     return (
-        <div className={"form"}>
-            <h3>Введите ваши данные</h3>
-            <input
-                className={'input'}
-                type="text"
-                placeholder={'Логин'}
-                value={login}
-                onChange={onChangelogin}
-            />
-            <input
-                className={'input'}
-                type="text"
-                placeholder={'Пароль'}
-                value={password}
-                onChange={onChangePassword}
-            />
-            {/* <select value={subject} onChange={onChangeSubject} className={'select'}>
-                <option value={'physical'}>Физ. лицо</option>
-                <option value={'legal'}>Юр. лицо</option>
-            </select> */}
+        // <div className={"form"}>
+        //     <h3>Введите ваши данные</h3>
+        //     <input
+        //         className={'input'}
+        //         type="text"
+        //         placeholder={'Логин'}
+        //         value={login}
+        //         onChange={onChangelogin}
+        //     />
+        //     <input
+        //         className={'input'}
+        //         type="text"
+        //         placeholder={'Пароль'}
+        //         value={password}
+        //         onChange={onChangePassword}
+        //     />
+        //     {/* <select value={subject} onChange={onChangeSubject} className={'select'}>
+        //         <option value={'physical'}>Физ. лицо</option>
+        //         <option value={'legal'}>Юр. лицо</option>
+        //     </select> */}
+        // </div>
+
+        <form action="http://foo.com" method="post">
+        <div>
+          <label for="say">What greeting do you want to say?</label>
+          <input name="say" id="say" value="Hi"/>
         </div>
+        <div>
+          <label for="to">Who do you want to say it to?</label>
+          <input name="to" id="to" value="Mom"/>
+        </div>
+        <div>
+          <button>Send my greetings</button>
+        </div>
+      </form>
+      
     );
 };
 
