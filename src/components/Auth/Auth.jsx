@@ -39,7 +39,7 @@ const Auth = () => {
             },
             body: JSON.stringify(data)
         })
-        // tg.sendData(JSON.stringify(data));
+        tg.sendData(JSON.stringify(data));
     }, [login, password, /*subject*/])
 
     useEffect(() => {
