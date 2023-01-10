@@ -43,7 +43,7 @@ const Auth = () => {
             method: "POST",
             headers: {
                 "Accept": "application/json",
-                "Content-Type": "application/json"
+                // "Content-Type": "application/json"
             },
             body: JSON.stringify({"as":"12"})
         }),
