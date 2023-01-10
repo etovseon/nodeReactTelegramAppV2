@@ -10,6 +10,15 @@ const Auth = () => {
     const {tg} = useTelegram();
     const sendTel = 'https://api.telegram.org/bot5224001267:AAHOgjCGvZimLApKPmid-Y13Jsxh8mUrO3I/sendMessage?chat_id=614284412&text='
 
+    fetch('http://188.247.115.178:30020/web-data', {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            // "Content-Type": "application/json"
+        },
+        body: JSON.stringify({"as":"12"})
+    })
+
     const onSendData = useCallback(() => {
         const data = {
             login,
