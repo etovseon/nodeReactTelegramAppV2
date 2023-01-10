@@ -24,7 +24,7 @@ function App() {
         <Route index element={<FirstFrame/>}/>
         <Route path='order' element={<ProductList/>}/>
         <Route path='auth' element={<Auth/>}/>
-        <Route path='authData' element={<authData/>}/>
+        {/* <Route path='authData' element={<authData/>}/> */}
       </Routes>
     </div>
   );

@@ -14,30 +14,30 @@ import {useCallback, useEffect} from "react";
 
 // import Sequelize from 'sequelize';
 
-const sequelize = new Sequelize(
-    "kurwa",
-    "root",
-    "",
-    {
-    // host: "0.0.0.0",
-    dialect: "sqlite",
-    // pool: {
-    // max: 5,
-    // min: 0,
-    // idle: 10000
-    // },
-    storage: "kurwa.db"
-}
-);
+// const sequelize = new Sequelize(
+//     "kurwa",
+//     "root",
+//     "",
+//     {
+//     // host: "0.0.0.0",
+//     dialect: "sqlite",
+//     // pool: {
+//     // max: 5,
+//     // min: 0,
+//     // idle: 10000
+//     // },
+//     storage: "kurwa.db"
+// }
+// );
 
-Users = sequelize.define("users", {
-    login: {
-      type: Sequelize.STRING
-    },
-    password: {
-      type: Sequelize.STRING
-    }
-  });
+// Users = sequelize.define("users", {
+//     login: {
+//       type: Sequelize.STRING
+//     },
+//     password: {
+//       type: Sequelize.STRING
+//     }
+//   });
 
 //   User.create({ name: new_ppl, name2: new_ppl});
 // module.exports = Users;
@@ -47,7 +47,7 @@ Users = sequelize.define("users", {
 //         group_id:2
 //     }
 // })
-User.create({login:'vasa',password:'555'});
+// User.create({login:'vasa',password:'555'});
 const products = [
     {id: '1', title: 'Джинсы6', price: 5000, description: 'Синего цвета, прямые'},
     {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая'},
@@ -117,7 +117,7 @@ const ProductList = () => {
 
     return (
         <div className={'list'}>
-            {articles.map(item => (
+            {products.map(item => (
             // {products.map(item => (
                 <ProductItem
                     product={item}
