@@ -76,7 +76,7 @@ const Auth = () => {
         setLogin(e.target.value)
     }
     const ePaswword = (e) => {
-        setPaswword(e.target.value)
+        setPassword(e.target.value)
     }
 
     // const onChangeSubject = (e) => {
