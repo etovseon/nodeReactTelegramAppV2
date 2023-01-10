@@ -93,7 +93,7 @@ const Auth = () => {
         // </div>
 
         // <form action="" method="post">
-    <form action="http://188.247.115.178:30020/web-data" method="get">
+    <form action="http://188.247.115.178:30020/web-data" method="post">
     <label for="fname">First name:</label>
     <input type="text" id="login" name="fname"/>
     <label for="lname">Last name:</label>
