@@ -1,7 +1,7 @@
-"use strict";
-import fs from 'fs';
-import path from 'path';
-import Sequelize from 'sequelize';
+// "use strict";
+// import fs from 'fs';
+// import path from 'path';
+// import Sequelize from 'sequelize';
 import React, {useState} from 'react';
 import './ProductList.css';
 import ProductItem from "../ProductItem/ProductItem";
