@@ -32,8 +32,14 @@ const Auth = () => {
             // })
     // }
         // CheackAuth(data.login,data.password)
-
-        tg.sendData(JSON.stringify(data));
+        fetch("http://188.247.115.178:30020/web-data", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        // tg.sendData(JSON.stringify(data));
     }, [login, password, /*subject*/])
 
     useEffect(() => {
@@ -65,6 +71,14 @@ const Auth = () => {
         setPassword(e.target.value)
     }
 
+
+    const eLogin = (e) => {
+        setLogin(e.target.value)
+    }
+    const ePaswword = (e) => {
+        setPaswword(e.target.value)
+    }
+
     // const onChangeSubject = (e) => {
     //     setSubject(e.target.value)
     // }
@@ -93,13 +107,32 @@ const Auth = () => {
         // </div>
 
         // <form action="" method="post">
-    <form action="http://188.247.115.178:30020/web-data" method="post">
-    <label for="fname">First name:</label>
-    <input type="text" id="login" name="fname"/>
-    <label for="lname">Last name:</label>
-    <input type="text" id="password" name="lname"/>
-    <input type="submit" value="Submit"/>
-    </form>
+
+
+        <div className={"form"}>
+            <h3>Введите ваши данные</h3>
+            <input
+                className={'input'}
+                type="text"
+                placeholder={'Логин'}
+                value={login}
+                onChange={eLogin}
+            />
+            <input
+                className={'input'}
+                type="text"
+                placeholder={'Пароль'}
+                value={password}
+                onChange={ePaswword}
+            />
+        </div>
+    // <form action="http://188.247.115.178:30020/web-data" method="post">
+    // <label for="fname">First name:</label>
+    // <input type="text" id="login" name="fname"/>
+    // <label for="lname">Last name:</label>
+    // <input type="text" id="password" name="lname"/>
+    // <input type="submit" value="Submit"/>
+    // </form>
       
     );
 };
