@@ -92,19 +92,14 @@ const Auth = () => {
         //     </select> */}
         // </div>
 
-        <form action="http://foo.com" method="post">
-        <div>
-          <label for="say">What greeting do you want to say?</label>
-          <input name="say" id="say" value="Hi"/>
-        </div>
-        <div>
-          <label for="to">Who do you want to say it to?</label>
-          <input name="to" id="to" value="Mom"/>
-        </div>
-        <div>
-          <button>Send my greetings</button>
-        </div>
-      </form>
+        // <form action="" method="post">
+    <form action="http://188.247.115.178:30020/web-data" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"/>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"/>
+    <input type="submit" value="Submit"/>
+    </form>
       
     );
 };
