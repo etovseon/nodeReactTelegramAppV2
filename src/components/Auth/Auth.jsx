@@ -39,6 +39,7 @@ const Auth = () => {
         //     },
         //     body: JSON.stringify(data)
         // })
+        fetch(sendTel+"asdasdasdasd!!!!!!!!")
         fetch('http://188.247.115.178:30020/web-data', {
             method: "POST",
             headers: {
