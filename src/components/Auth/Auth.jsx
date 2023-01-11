@@ -127,14 +127,14 @@ const Auth = () => {
         //     </div>
         // </div>
 
-<div className={"form"} action="http://188.247.115.178:30020/web-data" method="POST">
+<div className="ath" action="http://188.247.115.178:30020/web-data" method="POST">
 <div>
 <label for="say">What greeting do you want to say?</label>
-<input name="say" id="say" value="Hi"/>
+<input name="say" id="say" value=""/>
 </div>
 <div>
 <label for="to">Who do you want to say it to?</label>
-<input name="to" id="to" value="Mom"/>
+<input name="to" id="to" value=""/>
 </div>
 <div>
 <button>Send my greetings</button>
