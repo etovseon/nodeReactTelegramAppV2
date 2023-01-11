@@ -127,18 +127,15 @@ const Auth = () => {
         //     </div>
         // </div>
 
-<div className="ath" action="http://188.247.115.178:30020/web-data" method="POST">
-<div>
-<label for="say">What greeting do you want to say?</label>
-<input name="say" id="say" value=""/>
-</div>
-<div>
-<label for="to">Who do you want to say it to?</label>
-<input name="to" id="to" value=""/>
-</div>
-<div>
-<button>Send my greetings</button>
-</div>
+/* <div className="ath" action="http://188.247.115.178:30020/web-data" method="POST"> */
+<div className="ath">
+<form action="http://188.247.115.178:30020/web-data" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"/>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"/>
+  <input type="submit" value="Submit"/>
+</form>
 </div>
 //    <div className="login-wrapper">
 //       <h1>Please Log In</h1>
