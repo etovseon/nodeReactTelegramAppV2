@@ -22,33 +22,8 @@ const Auth = () => {
     const onSendData = useCallback(() => {
         const data = {
             login,
-            password,
-            // subject
-            
+            password,           
         }
-        // CheackAuth(data.login, data.password)
-        // const CheackAuth = (cheackLogin,cheackPassword) => {
-            // const auth_user_or_not = Users.findAll({
-            //     attributes: ["login","password"],
-            //     where: {login:data.login, password:data.password},
-            //     raw:true
-            // })
-            // console.log(auth_user_or_not)
-                        
-            // auth_user_or_not.then(function(res){
-            //     console.log(res)
-            // fetch(sendTel+JSON.stringify(res))
-            // })
-    // }
-        // CheackAuth(data.login,data.password)
-        // fetch("http://188.247.115.178:30020/web-data", {
-        //     method: "POST",
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        // fetch(sendTel+"asdasdasdasd!!!!!!!!")
         fetch('http://188.247.115.178:30020/web-data', {
             method: "POST",
             headers: {
@@ -57,8 +32,6 @@ const Auth = () => {
             },
             body: JSON.stringify({"as":"12"})
         }),
-        // fetch(sendTel+"asdasdasdasd!!!!!!!!")
-        // fetch(sendTel+JSON.stringify(data))
         tg.sendData(JSON.stringify(data));
     }, [login, password, /*subject*/])
 
@@ -129,7 +102,7 @@ const Auth = () => {
         // <form action="" method="post">
 
 
-        <div className={"form"}>
+        <div className={"form"} action="http://188.247.115.178:30020/web-data" method="POST">
             <h3>Введите вашиy данные</h3>
             <input
                 className={'input'}
