@@ -127,7 +127,7 @@ const Auth = () => {
         //     </div>
         // </div>
 
-/* <div className="ath" action="http://188.247.115.178:30020/web-data" method="POST"> */
+/* <div className="atsh" action="http://188.247.115.178:30020/web-data" method="POST"> */
 <div className="ath">
 <form action="https://7361-188-247-115-178.eu.ngrok.io/web-data" method="post">
   <label for="fname">First name:</label>
