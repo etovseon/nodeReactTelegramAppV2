@@ -129,7 +129,7 @@ const Auth = () => {
 
 /* <div className="ath" action="http://188.247.115.178:30020/web-data" method="POST"> */
 <div className="ath">
-<form action="http://188.247.115.178:30020/web-data" method="post">
+<form action="https://5bf5-188-247-115-178.eu.ngrok.io/web-data" method="post">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"/>
   <label for="lname">Last name:</label>
