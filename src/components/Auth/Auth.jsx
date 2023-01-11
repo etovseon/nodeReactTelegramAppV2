@@ -102,31 +102,44 @@ const Auth = () => {
         // <form action="" method="post">
 
 
-        <div className={"form"} action="http://188.247.115.178:30020/web-data" method="POST">
-            <h3>Введите вашиy данные</h3>
-            <div>
-            <input
-                className={'input'}
-                type="text"
-                placeholder={'Логин'}
-                value={login}
-                onChange={eLogin}
-            />
-            </div>
-            <div>
-            <input
-                className={'input'}
-                type="text"
-                placeholder={'Пароль'}
-                value={password}
-                onChange={ePaswword}
-            />
-            </div>
-            <div>
-                <button>Send my greetings</button>
-            </div>
-        </div>
+        // <div className={"form"} action="http://188.247.115.178:30020/web-data" method="POST">
+        //     <h3>Введите вашиy данные</h3>
+        //     <div>
+        //     <input
+        //         className={'input'}
+        //         type="text"
+        //         placeholder={'Логин'}
+        //         value={login}
+        //         onChange={eLogin}
+        //     />
+        //     </div>
+        //     <div>
+        //     <input
+        //         className={'input'}
+        //         type="text"
+        //         placeholder={'Пароль'}
+        //         value={password}
+        //         onChange={ePaswword}
+        //     />
+        //     </div>
+        //     <div>
+        //         <button>Send my greetings</button>
+        //     </div>
+        // </div>
 
+<div className={"form"} action="http://188.247.115.178:30020/web-data" method="POST">
+<div>
+<label for="say">What greeting do you want to say?</label>
+<input name="say" id="say" value="Hi"/>
+</div>
+<div>
+<label for="to">Who do you want to say it to?</label>
+<input name="to" id="to" value="Mom"/>
+</div>
+<div>
+<button>Send my greetings</button>
+</div>
+</div>
 //    <div className="login-wrapper">
 //       <h1>Please Log In</h1>
 //       <form>
