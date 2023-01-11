@@ -104,6 +104,7 @@ const Auth = () => {
 
         <div className={"form"} action="http://188.247.115.178:30020/web-data" method="POST">
             <h3>Введите вашиy данные</h3>
+            <div>
             <input
                 className={'input'}
                 type="text"
@@ -111,6 +112,8 @@ const Auth = () => {
                 value={login}
                 onChange={eLogin}
             />
+            </div>
+            <div>
             <input
                 className={'input'}
                 type="text"
@@ -118,6 +121,10 @@ const Auth = () => {
                 value={password}
                 onChange={ePaswword}
             />
+            </div>
+            <div>
+                <button>Send my greetings</button>
+            </div>
         </div>
 
 //    <div className="login-wrapper">
